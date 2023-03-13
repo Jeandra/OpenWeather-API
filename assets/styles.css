@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
     background-position: center;
     background-size: cover;
 }
@@ -52,10 +51,10 @@ body {
     padding: 0.8rem;
     min-width: 50px;
     margin-left: 8px;
-    background-color: #8dd0f5;
+    background-color: #fff;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: #0f0b0b;
     border-radius: 10rem;
 }
 
@@ -152,3 +151,5 @@ body {
 #suggestions button:hover {
     opacity: 1;
 }
+
+ 
