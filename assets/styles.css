@@ -8,11 +8,12 @@
 }
 
 body {
-    background: #3e3636;
+    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%,
+    #8dd0f5 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
 }
@@ -25,14 +26,14 @@ body {
     background-color: transparent;
     backdrop-filter: blur(3px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-    padding: 1rem;
+    padding: 1.5rem;
     color: #fdfdfd;
     border-radius: 1rem;
     max-width: 400px;
 }
 
 /* FORM */
-.form h2 {
+.form h3 {
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -50,7 +51,6 @@ body {
 }
 
 input:focus {
-  
     outline: 0;
 }
 
