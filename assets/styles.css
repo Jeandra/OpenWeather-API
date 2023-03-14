@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     background-position: center;
     background-size: cover;
 }
@@ -24,7 +24,7 @@ body {
 .container {
     background-color: transparent;
     backdrop-filter: blur(3px);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
     padding: 1rem;
     color: #fdfdfd;
     border-radius: 1rem;
@@ -32,7 +32,7 @@ body {
 }
 
 /* FORM */
-.form h3 {
+.form h2 {
     margin-bottom: 1rem;
     text-align: center;
 }
