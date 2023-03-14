@@ -2,7 +2,7 @@
 
 
 const apiKey = "0603b2f693cc5a7c0b866eb008134311";
-const apiCountryURL = "https://countryflagsapi.com/png/";
+//const apiCountryURL = "https://countryflagsapi.com/png/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
 const cityInput = document.querySelector("#city-input");
@@ -21,8 +21,7 @@ const weatherContainer = document.querySelector("#weather-data");
 const errorMessageContainer = document.querySelector("#error-message");
 const loader = document.querySelector("#loader");
 
-const suggestionContainer = document.querySelector("#suggestions");
-const suggestionButtons = document.querySelectorAll("#suggestions button");
+
 
 // Loader
 const toggleLoader = () => {
@@ -51,7 +50,7 @@ const hideInformation = () => {
   errorMessageContainer.classList.add("hide");
   weatherContainer.classList.add("hide");
 
-  suggestionContainer.classList.add("hide");
+  
 };
 
 const showWeatherData = async (city) => {
@@ -71,7 +70,7 @@ const showWeatherData = async (city) => {
     "src",
     `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   );
-  countryElement.setAttribute("src", apiCountryURL + data.sys.country);
+  //countryElement.setAttribute("src", apiCountryURL + data.sys.country);
   umidityElement.innerText = `${data.main.humidity}%`;
   windElement.innerText = `${data.wind.speed}km/h`;
 
@@ -98,11 +97,5 @@ cityInput.addEventListener("keyup", (e) => {
 });
 
 // Sugestões
-suggestionButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const city = btn.getAttribute("id");
 
-    showWeatherData(city);
-  });
-});
 
