@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
+    background: #3e3636;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body {
 
 .container {
     background-color: transparent;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(3px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 1rem;
     color: #fdfdfd;
@@ -34,6 +34,7 @@ body {
 /* FORM */
 .form h3 {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .form-input-container {
@@ -45,6 +46,12 @@ body {
     border: none;
     flex: 1;
     border-radius: 10rem;
+    
+}
+
+input:focus {
+  
+    outline: 0;
 }
 
 .form button {
