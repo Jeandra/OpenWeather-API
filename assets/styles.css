@@ -25,7 +25,7 @@ body {
     background-color: transparent;
     backdrop-filter: blur(7px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 2rem;
+    padding: 1rem;
     color: #fdfdfd;
     border-radius: 1rem;
     max-width: 400px;
@@ -151,5 +151,7 @@ body {
 #suggestions button:hover {
     opacity: 1;
 }
+
+
 
  
